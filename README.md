@@ -21,10 +21,17 @@ El análisis utiliza:
 
 - DESI DR1 BAO.
 - Pantheon+SH0ES.
-- Priors de distancia del CMB.
+- Priors de distancia del CMB de Bansal & Huterer (2025).
 
-Los datos observacionales originales no se redistribuyen en este repositorio. Deben obtenerse de sus fuentes oficiales.
+Los datos observacionales originales no se redistribuyen en este repositorio. Deben obtenerse de sus fuentes oficiales, indicadas a continuación:
 
+- [DESI DR1 BAO](https://data.desi.lbl.gov/doc/releases/dr1/vac/bao-cosmo-params/): documentación oficial de los resultados cosmológicos BAO de DR1.
+- [Pantheon+SH0ES](https://github.com/PantheonPlusSH0ES/DataRelease): repositorio oficial DataRelease.
+- [Bansal & Huterer (2025)](https://arxiv.org/abs/2502.07185), *Expansion-history preferences of DESI and external data*.
+
+En el caso de Pantheon+SH0ES se utilizó una versión preprocesada de los datos, siguiendo el procedimiento descrito en la memoria del TFM.
+
+La carpeta [`data/`](data/) contiene información adicional sobre los datos esperados por los scripts.
 En el caso de Pantheon+SH0ES se utilizó una versión preprocesada de los datos, siguiendo el procedimiento descrito en la memoria del TFM.
 
 La carpeta [`data/`](data/) contiene información adicional sobre los datos esperados por los scripts.
