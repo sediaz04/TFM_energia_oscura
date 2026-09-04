@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-19T12:36:49+02:00",
+  "environment": {
+    "python": "3.12.12",
+    "cobaya": "3.6.2",
+    "getdist": "1.7.6",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3"
+  },
+  "paths": {
+    "chains_final_dir": "chains_final/final",
+    "results_final_dir": "results_final",
+    "extraction_dir": "results_final/extraction"
+  },
+  "scope": {
+    "n_models": 4,
+    "n_combinations": 7,
+    "n_chains": 28,
+    "n_posterior_summary_rows": 119,
+    "n_best_sampled_points": 28,
+    "n_validation_warnings": 9
+  },
+  "models": [
+    {
+      "model_id": "LCDM",
+      "model": "LambdaCDM",
+      "model_code_name": "LCDM"
+    },
+    {
+      "model_id": "CPL",
+      "model": "CPL",
+      "model_code_name": "CPL"
+    },
+    {
+      "model_id": "CPL2",
+      "model": "CPL2",
+      "model_code_name": "CPLn2"
+    },
+    {
+      "model_id": "EXP",
+      "model": "Exponential",
+      "model_code_name": "exp"
+    }
+  ],
+  "combinations": [
+    {
+      "combination_id": "B",
+      "combination": "BAO",
+      "datasets": "BAO"
+    },
+    {
+      "combination_id": "S",
+      "combination": "SN",
+      "datasets": "SN"
+    },
+    {
+      "combination_id": "C",
+      "combination": "CMB",
+      "datasets": "CMB"
+    },
+    {
+      "combination_id": "BS",
+      "combination": "BAO + SN",
+      "datasets": "BAO + SN"
+    },
+    {
+      "combination_id": "CB",
+      "combination": "CMB + BAO",
+      "datasets": "CMB + BAO"
+    },
+    {
+      "combination_id": "CS",
+      "combination": "CMB + SN",
+      "datasets": "CMB + SN"
+    },
+    {
+      "combination_id": "CBS",
+      "combination": "CMB + BAO + SN",
+      "datasets": "CMB + BAO + SN"
+    }
+  ],
+  "statistical_conventions": {
+    "weights": "Exact integer multiplicities.",
+    "posterior_mean": "Weighted mean using chain weights.",
+    "posterior_std": "Weighted population standard deviation.",
+    "posterior_quantiles": "Exact linear quantiles of the conceptual integer-multiplicity expanded sample, equivalent to numpy.quantile(method='linear').",
+    "posterior_quantiles_reported": [
+      0.025,
+      0.16,
+      0.5,
+      0.84,
+      0.975
+    ],
+    "best_sampled_point": "Sampled row with minimum total chi2, equivalent here to maximum likelihood.",
+    "best_sampled_point_prior_note": "All 28 chains have constant minuslogprior across accepted samples, so minimum chi2 and minimum minuslogpost select the same row.",
+    "burn_in": "0 for all final runs."
+  },
+  "provenance_categories": [
+    "LEÍDA",
+    "CALCULADA",
+    "INFERIDA",
+    "NO DISPONIBLE"
+  ],
+  "validation": {
+    "classification_counts": {
+      "VÁLIDA": 22,
+      "VÁLIDA CON OBSERVACIONES": 6,
+      "REQUIERE REVISIÓN": 0,
+      "NO UTILIZABLE": 0
+    },
+    "n_chains_with_warnings": 6,
+    "n_validation_warnings": 9,
+    "warning_type_counts": {
+      "sampling": 5,
+      "interpretability": 4
+    },
+    "graphical_review": {
+      "n_reviewed": 11,
+      "n_not_selected": 17
+    },
+    "all_chains_usable": true
+  },
+  "planned_outputs": [
+    "chain_inventory.csv",
+    "chain_diagnostics.csv",
+    "posterior_summary.csv",
+    "best_sampled_points.csv",
+    "validation_warnings.csv",
+    "chain_metadata.json"
+  ]
+}
